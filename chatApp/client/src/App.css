@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbarList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbarItem {
+  float: left;
+}
+
+.navbarLink {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.activeLink {
+  background-color: lightslategray;
+}
+
+/* Nickname Screen */
+.nickname {
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(121, 9, 33, 1) 100%,
+		rgba(0, 212, 255, 1) 100%
+	);
+}
+
+.nickname__header {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 20%;
+}
+
+.nickname__input-container {
+	background-color: white;
+	width: 40%;
+	margin: auto;
+	display: flex;
+	padding: 5px;
+	border-radius: 5px;
+	justify-content: space-between;
+}
+
+.nickname__input {
+	font-size: 20px;
+	width: 100%;
+}
+
+.nickname__submit {
+	font-size: 20px;
+	color: white;
+	background-color: rgb(38, 202, 38);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.nickname__submit:hover {
+	background-color: darkgreen;
+	transition: all 0.2s;
+}
