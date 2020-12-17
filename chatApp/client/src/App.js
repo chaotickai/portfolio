@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { initiateSocket, disconnectSocket, subscribeToChat, sendMessage, loadData, myDisconnect } from './Socket';
@@ -90,7 +91,8 @@ class App extends React.Component {
       room: '',
       username: '',
       roomCode: '',
-      chat: []
+      chat: [],
+      lobby: []
     })
   }
 
