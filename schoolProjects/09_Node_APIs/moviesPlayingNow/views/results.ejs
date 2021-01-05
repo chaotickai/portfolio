@@ -1,0 +1,29 @@
+<%- include(`./partials/header.ejs`) %>
+
+<div class="container text-center">
+    <h1 class="display-2">Now Playing</h1>
+</div>
+<% movies.forEach(data => { %>
+        <div class="conatiner d-flex justify-content-center mt-5">
+            <div class="card mb-3" style="max-width: 60rem;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <% if (data.poster_path == null) { %>
+                            <img src="https://dubsism.files.wordpress.com/2017/12/image-not-found.png" class="card-img" alt="Move poster">
+                        <% } else { %>
+                            <img src="<%- `${imgsrc}${data.poster_path}` %>" class="card-img" alt="Move poster">
+                        <% } %>
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                            <h2 class="card-title text-center"> <%- data.title %> </h2>
+                            <h3 class="card-text font-weight-light"> <%- data.overview %> </h3>
+                            <p class="card-text text-center"><small class=""> <%- data.vote_average %> out of 10 </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<% }) %>
+
+<%- include(`./partials/footer.ejs`) %>

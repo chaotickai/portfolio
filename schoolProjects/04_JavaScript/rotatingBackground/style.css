@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+}
+
+#bg {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(assets/background1.jpg);
+    justify-content: center;
+}
+
+#theText {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 54px;
+    width: 35rem;
+    align-self: center;
+}

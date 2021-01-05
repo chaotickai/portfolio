@@ -1,0 +1,17 @@
+<%- include ("partials/header.ejs")%>
+
+	<!-- Home Page -->
+	<div class="jumbotron">
+		<h1 class="display-4">Star Wars Characters</h1>
+		<form action="/results" method="GET">
+			<input type="number" class="form-control" 
+				   min="1" 
+				   max="10" 
+				   placeholder="Enter your number (between 1 and 10)" 
+				   name="userNumber" autofocus>
+			<input type="submit" class="btn btn-primary mt-3">
+		</form>
+
+	</div>
+
+<%- include ("partials/footer.ejs")%>

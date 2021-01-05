@@ -1,0 +1,18 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}

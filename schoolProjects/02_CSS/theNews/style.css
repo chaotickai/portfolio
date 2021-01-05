@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+    background-color: #eaf0f2;
+    font-family: "oswald", sans-serif;
+}
+/* Section for the navigation bar */
+#navbar {
+    background-color: #263238;
+    font-size: 25px;
+    height: 75px;
+    color: white;
+}
+#logo {
+    font-size: 42px;
+    line-height: 35px;
+    padding: 15px 35px 15px 35px;
+    display: inline-block;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+.dropbtn {
+    background-color: #263238;
+    color: white;
+    height: 45px;
+    line-height: 45px;
+    padding: 15px 20px 58px 20px;
+}
+.dropcontent {
+    
+    height: 0px;
+    position: absolute;
+    z-index: 1;
+    width: max-content;
+    overflow: hidden;
+}
+.dropcontent a{
+    background-color: #263238;
+    color: white;
+    height: 45px;
+    line-height: 45px;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none; 
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: #546E7A;
+}
+.dropdown:hover .dropcontent{
+    transition: all 0.6s;
+    height: 300px;
+}
+.dropcontent a:hover {
+    background-color: #CFD8DC;
+}
+
+/* Section for the main page */
+main h1 {
+    font-size: 32px;
+    font-weight: 900;
+    margin: 35px 30px;
+}
+main img {
+    margin-left: 30px;
+}
+
+/* Section for the footer */
+footer {
+    background-color: #263238;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    padding: 50px;
+    margin-top: 75px;
+}
+footer h1 {
+    color: #B0BEC5;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+#footnav {
+    list-style: none;
+}
+#footnav li {
+    display: inline-block;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+footer p {
+    color: #B0BEC5;
+    margin-top: 15px;
+}
+li:hover a{
+    color: #CFD8DC;
+}

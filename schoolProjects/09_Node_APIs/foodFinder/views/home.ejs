@@ -1,0 +1,16 @@
+<%- include(`./partials/header.ejs`) %>
+
+<div>
+    <div>
+        <h1 class="display-2 ml-5">Find a food place near you</h1>
+    </div>
+    <form class="ml-5" action="/results" method="GET">
+        <div class="form-group">
+            <label for="location" class="display-4">Enter your location:</label>
+            <input type="search" name="location" class="form-control" id="location" placeholder="Location">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<%- include(`./partials/footer.ejs`) %>

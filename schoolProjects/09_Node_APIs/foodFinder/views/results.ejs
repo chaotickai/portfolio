@@ -1,0 +1,20 @@
+<%- include(`./partials/header.ejs`) %>
+
+<div class="conatiner justify-content-center mx-5 pb-5 mb-5">
+    <h1 class="text-center my-4">Here are some great places near that location!</h1>
+
+    <% for( let i = 0; i <= 10; i++ ) { %>
+    <div class="alert alert-dark" role="alert">
+        <h4 class="d-flex justify-content-between">
+            <a href=" <%= data[i].url %> "> <%= data[i].name %> </a> 
+            <img src="<%= data[i].rating %>.png" alt=""> 
+            <span class=""> <%= data[i].location.address1 %> </span> 
+        </h4>
+    </div>
+    <% } %>
+
+    <a href="//localhost:3000/">Search Again?</a>
+
+</div>
+
+<%- include(`./partials/footer.ejs`) %>

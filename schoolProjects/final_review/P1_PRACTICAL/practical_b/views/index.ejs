@@ -1,0 +1,30 @@
+<!-- Adding header partial -->
+<%- include(`./partials/header.ejs`) %>
+
+<!-- Navbar for root route -->
+<nav class="navbar justify-content-center navbar-light bg-light">
+    <form id="searchBar" class="form-inline" method="GET" action="/results" autocomplete="off">
+      <input class="form-control" type="search" placeholder="Search" name="search" id="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+
+<!-- Gallery for images -->
+<div class="gallery " id="gallery">
+    <div class="mb-3 d-flex justify-content-between flex-wrap">
+        <!-- Using forEach to loop over data passed from back-end and displaying an image for each by changing out src -->
+        <% gifs.forEach(data => { %>
+            <img class="img-fluid" src="<%- data.images.original.url %>" alt="Card image cap">
+        <% }) %>
+    </div>
+</div>
+
+<!-- Load more button that refreshes the page with 24 new gifs -->
+<form class="d-flex justify-content-center" action="/" method="GET">
+    <!-- Increasing offset variable passed from back end by set amount so we get new gifs -->
+    <input type="hidden" name="offset" id="offset" value="<%- offset + 24 %>">
+    <button class="btn btn-outline-success btn-lg btn-block my-1 mx-1" type="submit">More Please!</button>
+</form>
+  
+<!-- Adding footer partial -->
+<%- include(`./partials/footer.ejs`) %>

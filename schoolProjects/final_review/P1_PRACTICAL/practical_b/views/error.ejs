@@ -1,0 +1,24 @@
+<!-- Adding header partial -->
+<%- include(`./partials/header.ejs`) %>
+
+<!-- Navbar for error route with added back to trending button -->
+<nav class="navbar navbar-light bg-light">
+  <form action="/" class="">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Back to Trending!</button>
+  </form>
+  <div>
+  <form id="searchBar w-50" class="form-inline" method="GET" action="/results" autocomplete="off">
+    <input class="form-control" type="search" placeholder="Search" name="search" id="search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  </div>
+</nav>
+
+<!-- Give some information so the user knows what went wrong -->
+<div class="container justify-content-center text-center">
+    <h1>There was an error processing your request, please try searching again!</h1>
+    <h4>Make sure you've typed in what you want to search before submiting</h4>
+</div>
+
+<!-- Adding footer partial -->
+<%- include(`./partials/footer.ejs`) %>

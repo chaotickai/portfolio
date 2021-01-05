@@ -1,0 +1,27 @@
+.buttons {
+    text-align: center;
+}
+button {
+    padding: 35px 100px;
+    border: none;
+    margin: 20px 2px 20px 2px;
+    border-radius: 8px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+#blue {
+    background-color: #0D47A1;
+    color: #FFF;
+}
+#red {
+    background-color: #F44336;
+    color: #FFF;
+}
+#green {
+    background-color: #4CAF50;
+    color: #FFF;
+}
+#yellow {
+    background-color: #FFEB3B;
+    color: #FFF;
+}

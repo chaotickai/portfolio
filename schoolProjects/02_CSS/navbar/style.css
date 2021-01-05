@@ -1,0 +1,90 @@
+
+/* Instead of typing/copying all this for default styling, you could just use
+    * {
+        code 
+        code
+        code
+    }
+
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My Code*/
+
+/* NOTE: you will need to adjust your width and margin of hte buttons as they do not line 
+    up in a straight line on my browser at 100%.
+    If these are showing up in one line for you, it is possible your browser is at less than 100% */
+
+body {
+    background-color: #ECEFF1;
+    font-family: "Oswald", sans-serif
+}
+.dropbtn {
+    margin: auto;
+    background-color: #01579B;
+    color: white;
+    height: 70px;
+    width: 300px;
+    border: none;
+}
+.dropdown {
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    width: 19.7%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 1;
+}
+a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover {
+    background-color: #ACE39A;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #9AD1E3;
+}

@@ -1,0 +1,22 @@
+### Question:
+
+```
+function test(someText, pos) {
+  if(someText.indexOf(otherText, pos) != -1){
+    return true
+  }
+  return false
+}
+```  
+
+What new ES6 method replaces the above piece of code?
+
+1. someText.position()
+2. someText.has()
+3. someText.includes()
+4. None of the above
+
+
+### Answer:
+
+3. someText.includes()

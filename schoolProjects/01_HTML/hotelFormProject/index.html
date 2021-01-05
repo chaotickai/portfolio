@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+       
+       <style>
+            .infobanner {
+               margin-top: -10px;
+               margin-left: 10px;
+               background: white;
+               width: 163px;
+            }
+           .guestinfo {
+               list-style: none;
+               margin-bottom: 15px;
+               padding: 0px 0px 10px 10px;
+               border: 1px solid #000;
+           }
+            .guestinfo li+li {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+
+        <h1>Hotel Room Service</h1>
+
+        <h3>Welcome to our hotel! We hope you enjoy your stay.</h3>
+
+        <p>We value you as our guest! Use this online form to have a hot, delicious breakfast delivered to your room in the morning. Please fill out the form below before midnight so that we can make the proper accomodations. All meals are served before 10AM. Tipping is encouraged.</p>
+
+        <form action="">
+            
+
+            <ul class="guestinfo">
+
+                <p class="infobanner">Hotel Guest Contact Info</p>
+
+                <li><label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName" placeholder="ex. John" required></li>
+
+                <li><label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName" placeholder="ex. Doe" required></li>
+
+                <li><label for="room#">Room Number:</label>
+                <input type="number" name="room#" id="room#" min="1" max="350" pattern="[0-3]{1}[0-9]{1}[0-9]{1}" placeholder="ex. 111" required></li>
+            </ul>
+        
+            <label for="servetime">What time would you like to be served?</label>
+            <input type="time" name="servetime" id="servetime" step="900" min="06:00" max="10:00" pattern="[6-10]{1}" required>
+
+            <br><br>
+
+            <label for="entree">Please choose your entree:</label>
+            <select>
+                <option value="" disabled selected> </option>
+                <option value="chk&waf">Chicken and Waffles</option>
+                <option value="pnk&srp">Pancakes and Syrup</option>
+                <option value="#brn">Hashbrowns</option>
+                <option value="bcn&egs">Bacon and Eggs</option>
+                <option value="tst">Boring Ol' Toast</option>
+            </select>
+
+                <br>
+
+               <p>Would you like extra butter with that?</p>
+
+               <input type="radio" value="yes" id="yes" name="butter" checked>
+               <label for="yes">Yes</label>
+
+               <input type="radio" value="no" id="no" name="butter">
+               <label for="no">No</label>
+
+               <input type="radio" value="surprise" id="surprise" name="butter">
+               <label for="surprise">Surprise me</label>
+
+               <br><br>
+
+               <input type="submit">
+        </form>
+
+    </body>
+</html>
